@@ -85,7 +85,6 @@ body{
     display: flex;
     box-shadow: 10px 10px 20px #79839b42 ;
     border-radius: 1.5rem;
-    max-height: 28rem;
 }
 /* start left-section  */
 .container .your-result{
