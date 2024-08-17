@@ -154,19 +154,19 @@ body{
 }
 .summary .elements .ele-1{
     color:#fd6466 ;
-    background-color:hsl(300, 100%, 99%) ;
+    background-color:hsl(300, 100%, 95%) ;
 }
 .summary .elements .ele-2{
     color: #ffb423 ;
-    background-color:hsl(40, 100%, 98%) ;
+    background-color:hsl(40, 100%, 95%) ;
 }
 .summary .elements .ele-3{
     color: #00bb8f ;
-    background-color:hsl(160, 100%, 98.5%) ;
+    background-color:hsl(160, 100%, 95%) ;
 }
 .summary .elements .ele-4{
     color:#3042dc ;
-    background-color:hsl(221, 100%, 99%) ;
+    background-color:hsl(221, 100%, 95%) ;
 }
 .black{
     color: black;
@@ -177,7 +177,7 @@ body{
 .summary a{
     text-decoration: none;
     background-color: hsl(224, 30%, 27%);
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     text-align: center;
     border-radius: 5rem;
     color: hsl(0, 0%, 100%) ;
