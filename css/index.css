@@ -132,7 +132,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: Hanken-Bold,Arial,Helvetica,sans-serif;
-
+    font-weight:700;
 }
 .summary h2{
     margin: 0.5rem 0 ;
@@ -213,7 +213,7 @@ body{
     }
     .summary .elements>div{
         width:20rem;
-        margin-left:1.5rem;
+        margin-left:2rem;
     }
     .summary h2{
         padding-left:1rem;
