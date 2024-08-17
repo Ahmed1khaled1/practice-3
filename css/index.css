@@ -217,6 +217,7 @@ body{
     }
     .summary h2{
         padding-left:1rem;
+        margin-left:2rem;
     }
     .summary a{
         width: 20rem;
