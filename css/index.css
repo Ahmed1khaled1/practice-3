@@ -200,7 +200,7 @@ body{
         margin: -1rem -0.3rem 0;
     }
     .container .your-result{
-        padding-top: 2rem;
+    padding-top: 2rem;
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -208,22 +208,17 @@ body{
     border-radius: 2rem;
     }
     .summary{
-    padding: 1.5rem ;
     justify-content: center;
     width: 24rem;
     }
     .summary .elements>div{
         width:20rem;
-        padding: 0 auto;
+        margin-left:1.5rem;
+    }
+    .summary h2{
+        padding-left:1rem;
     }
     .summary a{
         width: 20rem;
     }
-}
-.attribution {
-    font-size: 11px;
-    text-align: center; 
-    }
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
