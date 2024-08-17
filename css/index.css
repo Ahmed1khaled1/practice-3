@@ -1,0 +1,225 @@
+@font-face {
+    font-family:Hanken Grotesk ;
+    src:url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:Hanken-Bold ;
+    src: url(/assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    }
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+margin-block-end: 0;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+list-style: none;
+}
+/* Set core body defaults */
+    body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family:Hanken Grotesk,Arial, Helvetica, sans-serif ;
+    }
+    /* Set shorter line heights on headings and interactive elements */
+    h1, h2, h3, h4,
+    button, input, label {
+    line-height: 1.1;
+    }
+    /* Balance text wrapping on headings */
+    h1, h2,
+    h3, h4 {
+    text-wrap: balance;
+    }
+    /* A elements that don't have a class get default styles */
+    a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor;
+}
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+    }
+    /* Inherit fonts for inputs and buttons */
+    input, button,
+    textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    }
+    /* Make sure textareas without a rows attribute are not tiny */
+    textarea:not([rows]) {
+    min-height: 10em;
+    }
+    /* Anything that has been anchored to should have extra scroll margin */
+    :target {
+    scroll-margin-block: 5ex;
+    }
+
+body{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    font-family:Hanken Grotesk,Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    box-shadow: 10px 10px 20px #79839b42 ;
+    border-radius: 1.5rem;
+}
+/* start left-section  */
+.container .your-result{
+    background: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%) );
+    text-align: center;
+    max-width: 18rem;
+    border-radius: 1.5rem;
+    color:  hsl(0, 0%, 100%);
+    padding: 1rem 2rem 2rem 2rem;    
+}
+.container .your-result .top{
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 90%);
+}
+.container .your-result  h3{
+    font-size: 1.6rem;
+}
+.container .your-result .score{
+    color: hsl(0, 0%, 90%);
+}
+.container .your-result .num-result{
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    background:linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+    text-align: center;
+    margin:0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .your-result .num-result .num{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 0 0 -2rem 0;
+}
+/* end left-section  */
+
+/* start right-section  */
+.summary{
+    width: 18rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: Hanken-Bold,Arial,Helvetica,sans-serif;
+
+}
+.summary h2{
+    margin: 0.5rem 0 ;
+}
+.summary .elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.summary .elements>div{
+    margin: 0.5rem ;
+    padding: 1rem ;
+    border-radius: 0.5rem;
+    width:15rem;
+    display: flex;
+    justify-content: space-between;
+}
+.summary .elements .ele-1 .Reaction,
+.summary .elements .ele-2 .Memory,
+.summary .elements .ele-3 .Verbal,
+.summary .elements .ele-4 .Visual{
+    display: flex;
+}
+.summary .elements .ele-1{
+    color:#fd6466 ;
+    background-color:hsl(300, 100%, 95%) ;
+}
+.summary .elements .ele-2{
+    color: #ffb423 ;
+    background-color:hsl(40, 100%, 95%) ;
+}
+.summary .elements .ele-3{
+    color: #00bb8f ;
+    background-color:hsl(160, 100%, 95%) ;
+}
+.summary .elements .ele-4{
+    color:#3042dc ;
+    background-color:hsl(221, 100%, 95%) ;
+}
+.black{
+    color: black;
+}
+.gray{
+    color: gray;
+}
+.summary a{
+    text-decoration: none;
+    background-color: hsl(224, 30%, 27%);
+    padding:  1rem;
+    text-align: center;
+    border-radius: 5rem;
+    color: hsl(0, 0%, 100%) ;
+    margin: 1rem;
+    width:15rem;
+}
+.summary a:hover{
+    background-color:hsla(256, 72%, 46%, 1) ;
+}
+/* end right-section  */
+
+@media (max-width:26rem) {
+    .container{
+        display: block;
+        margin: -1rem -0.3rem 0;
+    }
+    .container .your-result{
+    padding-top: 2rem;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    }
+    .summary{
+    justify-content: center;
+    width: 24rem;
+    }
+    .summary .elements>div{
+        width:20rem;
+        margin-left: 1.5rem;
+    }
+    .summary h2{
+    padding-left: 1rem;
+    }
+    .summary a{
+        width: 20rem;
+        margin-left: 2rem;
+    }
+}
